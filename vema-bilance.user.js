@@ -41,10 +41,13 @@
         let saldoCell = row.querySelector("td.field-saldo");
         let saldo = saldoCell.textContent.trim();
 
-        let fond = diffDuration(bilance, saldo)
-        console.log("Fond", fond);
+        let fond = diffDuration(bilance, saldo);
 
-        bilanceCell.querySelector("div").append(` (${fond})`);
+        let fondSpan = document.createElement("span");
+        fondSpan.textContent = ` → (${fond})`;
+        fondSpan.style.color = "blue";
+
+        bilanceCell.querySelector("div").append(fondSpan);
 
     };
 
