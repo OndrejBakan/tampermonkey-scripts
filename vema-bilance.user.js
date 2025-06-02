@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VEMA bilance
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Shows fund of working hours next to the total worked hours.
 // @author       You
 // @match        https://47557.cloud.vema.cz/VemaWebBridge.dll?Charset=utf-8&App=VemaPortal&Cmd=GetDD&WLink=CentrumCloud47557&DBVApp=DCH&DBVData=HR&DBVRole=Doch%C3%A1zkov%C3%BD%20vedouc%C3%AD&DocID=vm2d0015&DocParams=
