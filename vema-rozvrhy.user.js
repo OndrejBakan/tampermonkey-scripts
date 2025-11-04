@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VEMA rozvrhy
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  Vlastní rozvrhy (D6, D6+, D7, D7+, D10, D10+, N, N+)
 // @author       Ondřej Bakan
 // @match        https://47557.cloud.vema.cz/VemaWebBridge.dll?Charset=utf-8&App=VemaPortal&Cmd=GetDD&WLink=CentrumCloud47557&DBVApp=DCH&DBVData=HR&DBVRole=Doch%C3%A1zkov%C3%BD%20vedouc%C3%AD&DocID=vm2d0015&DocParams=
@@ -13,10 +13,12 @@
     'use strict';
 
     const replacements = {
+        "D": "60",
         "D6": "62",
         "D7": "60",
         "D10": "63",
         "N": "61",
+        "D+": "65",
         "D6+": "68",
         "D7+": "65",
         "D10+": "69",
